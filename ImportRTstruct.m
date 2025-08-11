@@ -6,6 +6,11 @@
 
 % forked from https://github.com/viswanath-lab/Read-RTSTRUCT-to-matlab 
 
+%% input: 
+% path to study folder, study folder name, subfolder with dicom images and Rtstruct, and name of the contour of interest
+%% output: 
+% images as a stack, masks as a stack, and the contours as a cell array 
+
 
 function [images, mask, contours] = ImportRTstruct(targetpath, Study_folder,Sub_folder,ROI_name)
 
@@ -28,6 +33,6 @@ function [images, mask, contours] = ImportRTstruct(targetpath, Study_folder,Sub_
     n = find(exact_match_mask);
     mask = contours(n).Segmentation;
     mask = flip(permute(mask,[2, 1, 3]),3); %for aligning mask with the image stack
-    imagestack(1000*mask + images)
+    %imagestack(1000*mask + images)
     
 end
