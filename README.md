@@ -7,9 +7,10 @@ Updated to include the following functions, and be runable with one line of code
 Mira Liu August 2025 
 
 
-
+## Set up directories
 To read the RTSTRUCT into matlab, collect your images and RTstruct in a study subject folder (e.g. StudyA_Subject1). 
-Put the single RTSTRUCT file and dicom image files in the same subfolder (e.g. StudyA_Subject1/FolderA), then put only the dicom image files in a folder named Dicoms in that same study subject folder (e.g. StudyA_Subject11/Dicoms)
+- Put the single RTSTRUCT file and dicom image files in the same subfolder (e.g. StudyA_Subject1/FolderA)
+- Put only the dicom image files in a folder named Dicoms in that same study subject folder (e.g. StudyA_Subject1/Dicoms)
 
 
 ## Specify the targetpath of the study folder
