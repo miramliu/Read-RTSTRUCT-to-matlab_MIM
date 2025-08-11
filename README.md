@@ -12,14 +12,18 @@ To read the RTSTRUCT into matlab, collect your images and RTstruct in a study su
 Put the single RTSTRUCT file and dicom image files in the same subfolder (e.g. StudyA_Subject1/FolderA), then put only the dicom image files in a folder named Dicoms in that same study subject folder (e.g. StudyA_Subject11/Dicoms)
 
 
-% Specify the targetpath of the study folder
+## Specify the targetpath of the study folder
 
 directory='users/desktop/Exports'
+
 Study_folder = 'StudyA_Subject1';
+
 Sub_folder = 'FolderA';
+
 ROI_wanted = 'Contour_of_interest';
 
-% now run the function
+
+## now run the function
 
 You should see the .mat file saved in the same folder. It could take a few minutes to get the output depending on the number of CT slices and structures.
 
