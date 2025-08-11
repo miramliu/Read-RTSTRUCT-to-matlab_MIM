@@ -15,9 +15,13 @@ Put the single RTSTRUCT file and dicom image files in the same subfolder (e.g. S
 % Specify the targetpath of the study folder
 
 directory='users/desktop/Exports'
+
 Study_folder = 'StudyA_Subject1';
+
 Sub_folder = 'FolderA';
+
 ROI_wanted = 'Contour_of_interest';
+
 
 % now run the function
 
